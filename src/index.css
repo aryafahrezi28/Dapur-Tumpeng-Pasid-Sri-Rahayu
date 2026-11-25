@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", Inter, sans-serif;
+
+  --color-ivory: #FAF9F6;
+  --color-cream: #F4F1EA;
+  --color-sage: #2A362D;
+  --color-sage-light: #3E4F42;
+  --color-sage-pale: #E9EFEA;
+  --color-sage-muted: #B3C0B6;
+  --color-gold: #A38C6D;
+  --color-gold-dark: #877256;
+  --color-gold-light: #F5EFE6;
+  --color-charcoal: #2C2825;
+}
+
+body {
+  background-color: #FAF9F6;
+  color: #2C2825;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.font-serif-editorial {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2A362D;
+  cursor: pointer;
+  border: 3px solid #FAF9F6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-slide-panel {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.28s ease;
+}
+.nav-slide-closed {
+  transform: translateX(-28px);
+  opacity: 0;
+  pointer-events: none;
+}
+.nav-slide-open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
