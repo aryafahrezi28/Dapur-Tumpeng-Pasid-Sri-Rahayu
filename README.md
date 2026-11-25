@@ -1,16 +1,27 @@
-# React + Vite
+# Dapur Tumpeng Ibu Sri Rahayu — Frontend UI (React + Vite + Tailwind CSS v4)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi *frontend* web untuk **Dapur Tumpeng Ibu Sri Rahayu** (Catering & Nasi Tumpeng Autentik sejak 2015), dibangun menggunakan **React**, **Vite**, dan **Tailwind CSS v4** dengan desain editorial hangat serta integrasi alur pemesanan ke WhatsApp.
 
-Currently, two official plugins are available:
+## Fitur Utama
+* **Top Navbar Interaktif:** Tombol menu *slide* kiri-ke-kanan yang tetap terbuka saat navigasi diklik, sapaan dinamis tamu/pengguna terverifikasi, serta akses cepat ke verifikasi WhatsApp dan keranjang.
+* **Hero & Keunggulan Dapur:** Informasi layanan katering sejak 2015, menu andalan, serta 4 poin keunggulan dapur.
+* **Katalog Paket Menu:** Filter kategori (*Semua*, *Tumpeng Kuning Spesial*, *Nasi Kotak Catering*, *Paket Syukuran*) dan fitur tambah ke keranjang.
+* **Rancang Custom Tumpeng:** Kalkulator interaktif untuk memilih bentuk sajian, jumlah porsi (5–50 porsi), lauk pendamping, tingkat kepedasan sambal, dan ucapan *topper* dengan estimasi harga *real-time*.
+* **Kalender Ketersediaan Jadwal:** Kalender interaktif bulanan dengan status *Tersedia*, *Terbatas*, dan *Penuh* yang otomatis mengisi tanggal acara di *checkout*.
+* **Slider Testimoni & 3 Langkah Pesan:** Navigasi *slider* ulasan pelanggan dan panduan singkat cara memesan.
+* **Verifikasi WhatsApp, Keranjang, Invoice & Ulasan Opsional:** Alur verifikasi kode via *deep-link* WhatsApp, *drawer* keranjang & status pesanan, skema *DP 50%* / *Lunas 100%*, pengiriman notifikasi pesanan ke WhatsApp Ibu Sri Rahayu, serta modal ulasan opsional.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Teknologi yang Digunakan
+* **React** & **Vite**
+* **Tailwind CSS v4** (`@tailwindcss/vite`)
+* **React Router DOM** & **Axios**
+* **Font Awesome** & **Google Fonts** (*Playfair Display* & *Plus Jakarta Sans*)
 
-## React Compiler
+## Menjalankan Proyek Secara Lokal
+1. Masuk ke folder proyek:
+   ```bash
+   cd dapur-tumpeng-sri-rahayu
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+   npm install
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   npm run dev
